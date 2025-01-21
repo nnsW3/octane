@@ -4,7 +4,7 @@
 
 `GET /api/`
 
-Load Octane node configuration. Config is used to correctly set token fee and fee payer in the created transaction.
+Load Octane node configuration. Config is used to correctly set the token fee and fee payer in the created transaction.
 
 No parameters.
 
@@ -58,7 +58,7 @@ Example response:
 
 `POST /api/createAssociatedTokenAccount`
 
-The transaction should transfer a fee to Octane as first instruction and create new associated token account as second instruction.
+The transaction should transfer a fee to Octane as the first instruction and create a new associated token account as second instruction.
 
 | Parameter   | Type   | Description                                                 |
 |-------------|--------|-------------------------------------------------------------|
@@ -98,7 +98,7 @@ Example response:
 
 `POST /api/buildWhirlpoolsSwap`
 
-Creates a transaction that allows to exchange an SPL token to SOL without having any SOL. It also returns `messageToken`: it needs to be passed to `/sendWhirlpoolsSwap` when submitting the signed transaction.
+Creates a transaction that allows to exchange of an SPL token to SOL without having any SOL. It also returns `messageToken`: it needs to be passed to `/sendWhirlpoolsSwap` when submitting the signed transaction.
 
 | Parameter         | Type   | Description                                              |
 |-------------------|--------|----------------------------------------------------------|
@@ -124,7 +124,7 @@ Example response:
 
 `POST /api/sendWhirlpoolsSwap`
 
-Sends a swap transaction after it was signed by the user.
+Sends a swap transaction after it is signed by the user.
 
 | Parameter    | Type   | Description                                                 |
 |--------------|--------|-------------------------------------------------------------|
