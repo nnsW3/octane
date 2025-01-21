@@ -64,7 +64,7 @@ If you host your own Octane node, you'll need to manage fee payer account. Octan
 
 ### Example app
 
-[octane-demo](https://github.com/sevazhidkov/octane-demo) is an open source app that showcases various types of gasless transactions using Octane:
+[octane-demo](https://github.com/sevazhidkov/octane-demo) is an open-source app that showcases various types of gasless transactions using Octane:
 * gasless token transfer (equivalent to any other simple transaction)
 * transaction sponsorship for authorized users, including limits and usage of octane-core
 * gasless swaps from tokens to SOL
@@ -84,7 +84,7 @@ Learn more about these use cases in [Recipes](docs/recipes.md).
 
 Octane operates trustlessly and is designed to be easily run by anyone in an adversarial environment.
 
-It uses ratelimiting, transaction validation, and transaction simulation to mitigate DoS, spam, draining, and other attacks.
+It uses rate-limiting, transaction validation, and transaction simulation to mitigate DoS, spam, draining, and other attacks.
 
 However, there are some risks associated with running an Octane node:
 
