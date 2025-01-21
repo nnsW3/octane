@@ -19,11 +19,11 @@ Actions are self-contained transaction validation and signing endpoints.
 You can call them from your backend endpoints when your use case fits in the Octane server capabilities:
 * Paying for transactions with an SPL token fee (including if it's your own token)
 * Paying for creating associated token accounts with an SPL token fee
-* Paying for gasless swaps with an SPL Token fee or without fee
+* Paying for gasless swaps with an SPL Token fee or without a fee
 
 #### signWithTokenFee
 
-Sign transaction by fee payer if the first instruction of transaction is a transfer of token fee and the rest instructions do not interact with fee payer's wallet.
+Sign transaction by fee payer if the first instruction of transaction is a transfer of token fee and the rest of instructions do not interact with fee payer's wallet.
 
 It also implements additional checks: duplicated transactions, fee payer source and failing transactions detection using simulation.
 
@@ -64,7 +64,7 @@ await sendAndConfirmRawTransaction(connection, transaction.serialize(), { commit
 
 Signs transaction by fee payer if both statements are true:
 
-a) the first instruction is a transfer of token fee to given account
+a) the first instruction is a transfer of token fee to a given account
 
 b) the second instruction creates an associated token account with initialization fees paid by fee payer.
 
