@@ -34,7 +34,7 @@ Now, we're ready to create the transaction with two instructions:
 1. Send token fee to Octane's account
 2. Send token transfer to any public key (but this transaction could be anything else)
 
-We also should set feePayer and recentBlockhash, and then sign the transaction using the end user wallet.
+We also should set feePayer and recentBlockhash, and then sign the transaction using the end user's wallet.
 
 ```javascript
 const transaction = new Transaction();
